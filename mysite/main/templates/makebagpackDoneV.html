@@ -1,0 +1,32 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/makebagpackDoneV.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+  </head>
+  <body>
+    <div class="nav">
+      <img src="{{img}}" alt="Profiel afbeelding" class="img-nav">
+      <span class="name-nav">{{user}}</span>
+      <a href="home" class="btnStart">
+        <span class="btnStart-text">Start</span>
+      </a>
+      <a class="btnVoegTagToe" href="chageKeys">
+        <img src="{% static 'img/voegTagToe.png'%}">
+      </a>
+      <a class="btnLogUit" href="Loguot">
+        <img src="{% static 'img/logUitButton.png' %}">
+      </a>
+    </div>
+    <div class="card"> 
+      {% if vergetenBoeken %}
+        <p class="titel">je bent deze boeken vergeten:</p>
+        {% for boeken in vergetenBoeken %}
+          <p class="boek">{{boeken}}</p>
+        {% endfor %}
+      {% else %}
+        <p class="titel">je bent geen boeken vergeten <br> veel succes op school</p>
+      {% endif %}
+    </div>
+  </body>
+</html>

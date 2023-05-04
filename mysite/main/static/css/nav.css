@@ -1,0 +1,83 @@
+.nav{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    padding: 0;
+    height: 48px;
+    min-height: 48px;
+    background: #ff520e;
+  }
+  
+  .img-nav{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 0.666rem;
+    background-color: rgba(0,0,0,.1);
+    margin-left: 12px;
+  }
+  
+  .name-nav{
+    color: #ffffff; 
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif; 
+    font-size: 14.5px; 
+    text-align: center; 
+    white-space: nowrap; 
+  }
+  .btnLogUit{
+    margin-left: auto;
+    margin-right: 5px;
+    scale: 0.825;
+}
+.btnLogUit:hover{
+    filter: brightness(0.8);
+    transition: ease filter 500ms;
+}
+body{
+    background-color: #eeeeee;
+    padding: 0;
+    margin: 0 ;
+}
+
+.btnVoegTagToe{
+    scale: 0.6;
+    position: relative;
+    left: 10px;
+}
+.btnVoegTagToe:hover{
+    filter: brightness(0.8);
+    transition: ease filter 200ms;
+}
+.btnStart{
+  color: #ffffff; 
+  font-family: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif; 
+  font-size: 14.5px; 
+  text-align: center; 
+  white-space: nowrap; 
+  text-decoration-line: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  vertical-align: middle;
+  left: 10px;
+  position: relative;
+}
+.btnStart-text{
+  vertical-align: middle;
+  display: table-cell;
+  top: 17px;
+  position: relative;
+}
+.btnStart:hover{
+  filter: brightness(0.85);
+}

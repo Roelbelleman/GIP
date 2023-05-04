@@ -1,0 +1,55 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+<html>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+  <div class="nav">
+    <img src="{{ img }}" alt="Profiel afbeelding" class="img-nav">
+    <span class="name-nav">{{ user }}</span>
+    <a href="home" class="btnStart"><span class="btnStart-text">Start</span></a>
+    <a class="btnVoegTagToe" href="chageKeys"><img src="{% static 'img/voegTagToe.png'%}"></a>
+    <a class="btnLogUit" href="Loguot"><img src="{% static 'img/logUitButton.png' %}"></a>
+  </div>
+
+  <body>
+    <div class="card"> 
+      <div class="card-content">
+        <form action="" method="post">
+          {% csrf_token %}
+          <button class="button">Maak boekentas</button><br>
+          {{ form }}
+        </form>
+      </div>
+      <div class="agenda">
+        <div class="agenda-maandag">
+          {% for vak in maandag %}
+            <span class="agenda-card">{{ vak }}<br></span>
+          {% endfor %} 
+        </div>
+        <div class="agenda-dinsdag">
+          {% for vak in dinsdag %}
+            <span class="agenda-card">{{ vak }}<br></span>
+          {% endfor %} 
+        </div>
+        <div class="agenda-woensdag">
+          {% for vak in woensdag %}
+            <span class="agenda-card">{{ vak }}<br></span>
+          {% endfor %} 
+        </div>
+        <div class="agenda-donderdag">
+          {% for vak in donderdag %}
+            <span class="agenda-card">{{ vak }}<br></span>
+          {% endfor %} 
+        </div>
+        <div class="agenda-vrijdag">
+          {% for vak in vrijdag %}
+            <span class="agenda-card">{{ vak }}<br></span>
+          {% endfor %} 
+        </div>
+      </div>
+    </div>
+  </body> 
+</html>
+
+<script src="{% static 'js/home.js' %}"></script>

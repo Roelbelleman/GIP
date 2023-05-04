@@ -1,0 +1,62 @@
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+  
+  .button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text {
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif;
+    color: #262626;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 5%;
+    min-inline-size: fit-content;
+  }
+  
+  button {
+    margin: 0;
+  }
+  
+  .card {
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 2px solid #c3c6ce;
+  }
+  button {
+    padding: 13px 22px;
+    background-color: #f6653c;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 29px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 28px;
+    margin-right: 50px;
+  }
+.buttons{
+  margin-right: 30px;
+}
+.Boeken-Count-text{
+    margin-top: 80px;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, sans-serif;;
+}
+.Boeken-Count {
+  position: absolute;
+  top: 6%;
+  left: 14%;
+  z-index: 1;
+}

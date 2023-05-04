@@ -1,0 +1,21 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/scan.css' %}">
+<html>
+  <div class="nav">
+    <img src="{{img}}" alt="Profiel afbeelding" class="img-nav">
+    <span class="name-nav">{{user}}</span>
+  </div>
+  <div class="card">
+    <div class="card-text">
+      <span>scan het boek van</span>
+      <br>  
+      <span>{{vak}}</span>
+    </div>
+    <form action="/scanIDs">   
+      <button class="button"> next </button>            
+    </form>
+    <form action="/scanningIDs">
+      <button class="button"> scan </button>            
+    </form>
+  </div>
+</html>

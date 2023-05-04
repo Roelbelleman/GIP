@@ -1,0 +1,112 @@
+img{
+    margin: -8;
+    display: block;
+    flex-grow: 1;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    border-style: none;
+}
+  
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 33%;
+    height: 82%;
+    padding: 300px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.75);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    backdrop-filter: blur(6px);  
+}
+
+.title{
+    position: absolute;
+    top: 16%;
+    left: 10%;
+}
+
+h1{
+    margin-bottom: -7%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 40px;
+  letter-spacing: -2.4px;
+  word-spacing: -0.6px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+h2{
+    margin-bottom: -5%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    word-spacing: -2.5999999999999996px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none solid rgb(255, 255, 255);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.login-form{
+    position: absolute;
+    margin: 0 auto;
+    width: 50%;
+    scale: 1.2;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container .label-text {
+    position: absolute;
+    top: 24px;
+    left: 10px;
+    font-size: 16px;
+    color: black;
+    font-family: Open Sans,Helvetica Neue,helvetica,sans-serif;
+    transition: top 200ms;
+}
+
+input[type=text] , input[type=password]{
+    margin-top: 12px;
+    border: 2px solid #f6653c;
+    font-size: 16px;
+    background: white;
+    border-radius: 20px;
+    height: 45px;
+    width: 100%;
+}
+
+input[type=submit]{
+    margin-top: 12px;
+    font-size: 16px;
+    border-radius: 20px;
+    height: 45px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    background: white;
+    border: 2px solid #3a70e6;
+    color: #3a70e6;
+
+}
+input[type=submit]:hover{
+    border: 3px solid #3061cc;
+    color: #3061cc;
+    font-weight: 550;
+}
+

@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+  <body>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/landingPage.css' %}">
+    <img src="{% static 'img/2022-10_herfst_smartschool_city_1920.avif' %}" class="Backroundphoto">
+      <div class="login-box">
+          <div class="login-form">
+              <form action="" method="post">
+                {% csrf_token %}
+                {% for field in form %}
+                <div class="fieldWrapper">
+                  <label for="{{ field.html_name }}">
+                    <div class="input-container">
+                      <span class="label-text">{{ field.label_tag }}</span>
+                      {{ field }}
+                    </div>
+                  </label><br>
+                </div>
+            {% endfor %}
+                  <input type="submit" class="form-submit-button" value="aanmelden">
+              </form>
+          </div>
+      </div>
+      <div class="title">
+          <h1>Roel Bellemans</h1>
+          <br>
+          <h2>GIP 2022 - 2023</hp2>
+      </div>
+  </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{% static 'js/landingPage.js' %}"></script>

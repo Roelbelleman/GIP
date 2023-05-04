@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/chageKeys.css' %}">
+</head>
+<body>
+  <div class="nav">
+    <img src="{{img}}" alt="Profiel afbeelding" class="img-nav">
+    <span class="name-nav">{{user}}</span>
+    <a href="home" class="btnStart">
+      <span class="btnStart-text">Start</span>
+    </a>
+    <a class="btnVoegTagToe" href="chageKeys">
+      <img src="{% static 'img/voegTagToe.png'%}">
+    </a>
+    <a class="btnLogUit" href="Loguot">
+      <img src="{% static 'img/logUitButton.png' %}">
+    </a>
+  </div>
+  <div class="card">
+    <div class="button-container">
+      {% for vak in vakken %}
+        <div class="button-row">
+          <div class="text">{{vak}}</div>
+          <div class="buttons">
+            <a href="verwijderVak/{{vak}}"><button>verwijder cursus</button></a>
+            <button>voeg Toe</button>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="Boeken-Count">
+      {% for counter in count %}
+        <div class="Boeken-Count-text">aantal boeken: {{ counter }}</div>
+      {% endfor %}
+  </div>
+</body>
+<script src="{% static 'js\chageKeys.js' %}"></script>
+</html>
